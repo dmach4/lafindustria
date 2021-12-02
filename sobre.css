@@ -1,0 +1,72 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+position: relative;
+}
+header{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),
+    url(./img/Banner.jpg);
+background-position: center;
+background-size: cover;
+}
+header .menu{
+position: fixed;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+background-color: black;
+border-bottom: 1px white solid;
+}
+#logo{
+color: green;
+font-size: 70px;
+}
+header .menu li{
+display: inline-block;
+}
+header .menu a{
+text-decoration: none;
+font-size: 20px;
+color:green;
+padding: 8px 12px;
+border-radius: 3px;
+transition: 300ms;
+}
+header .menu a:hover{
+transition: 300ms;
+color:white;
+background-color: blue;
+border-radius: 30px 0px 0px 0px;
+border: 1px white solid;
+}
+#contato {
+position: relative;
+top: 50%;
+width: 100%;
+text-align: center;
+color:rgb(29, 204, 29);
+}
+footer p{
+position: absolute;
+bottom: 0px;
+width: 100%;
+color: white;
+display: flex;
+justify-content:center;
+padding: 10px;
+background-color: black;
+border-top: 1px white solid;
+}
+@media screen and (max-width: 500px){
+
+  header .menu li{
+  display:flex;
+  padding: 10px;
+  }
+}

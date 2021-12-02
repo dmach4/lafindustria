@@ -1,0 +1,145 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+position: relative;
+}
+header{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url(./img/Banner.jpg);
+background-position: center;
+background-size: cover;
+}
+header .menu{
+position: fixed;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+background-color: black;
+border-bottom: 1px white solid;
+}
+#logo{
+color:green;
+font-size: 70px;
+}
+header .menu li{
+display: inline-block;
+}
+header .menu a{
+text-decoration: none;
+font-size: 20px;
+color:green;
+padding: 8px 12px;
+border-radius: 3px;
+transition: 300ms;
+}
+header .menu a:hover{
+transition: 300ms;
+color:white;
+background-color: blue;
+border-radius: 30px 0px 0px 0px;
+border: 1px white solid;
+}
+
+.content{
+height: 50%;
+width: 50%;
+overflow:hidden;
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.navegation{
+position: absolute;
+top: 85%;
+left: 50%;
+transform: translate(-50%);
+display: flex;
+}
+label{
+font-size: 15px;
+padding: 5px;
+text-align: center;
+color: green;
+}
+input{
+display: none;
+}
+.bar{ 
+width: 80px;
+height: 30px;
+border:white 2px solid;
+margin: 6px;
+border-radius: 10px;
+cursor: pointer;
+transition: 0.5s;
+}
+.bar:hover{
+background-color:blue;
+color: white;
+}
+
+.slides{
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.5s;
+}
+
+.slide img{
+  width: 100%;
+  height:100%;
+}
+
+#slide1:checked ~ .s1{
+  margin-left: 0;
+}
+#slide2:checked ~.s1{
+  margin-left: -20%;
+}
+
+#slide3:checked ~.s1{
+  margin-left: -40%;
+}
+
+footer p{
+position: absolute;
+bottom: 0px;
+width: 100%;
+color: white;
+display: flex;
+justify-content:center;
+padding: 10px;
+background-color: black;
+border-top: 1px white solid;
+}
+@media screen and (max-width: 500px){
+
+  header .menu li{
+  display:flex;
+  padding: 10px;
+  }
+  .content{
+  height: 60%;
+  width: 80%;
+  overflow:hidden;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  }
+  .slide img{
+  width: 100%;
+  height: 30%;
+  }
+}
